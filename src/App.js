@@ -4,6 +4,7 @@ import './App.css';
 import ColorSliderApp from './color-slider/ColorSliderApp';
 import ThisWeekApp from './this-week/ThisWeekApp';
 import InflectItApp from './inflect-it/InflectItApp';
+import MarkdownApp from './markdown-editor/MarkdownApp';
 
 export default function App() {
   return (
@@ -22,6 +23,9 @@ export default function App() {
           <Link className="link" to="/inflectIt">
             Inflect It
           </Link>
+          <Link className="link" to="/markdownEditor">
+            Markdown Editor
+          </Link>
         </nav>
 
         <Switch>
@@ -33,6 +37,9 @@ export default function App() {
           </Route>
           <Route path="/inflectIt">
             <InflectItApp />
+          </Route>
+          <Route path="/markdownEditor">
+            <MarkdownApp />
           </Route>
         </Switch>
       </div>

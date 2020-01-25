@@ -20,7 +20,7 @@
   margin-top: 2vh;
 }
 #slider-title {
-  width: 25vh;
+  width: 25%;
   margin: auto;
   font-size: 30pt;
   padding: 3vh;
@@ -45,17 +45,19 @@
 #this-week-app > .day-container {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 10vh;
 }
 
 .day-container > .day {
-  box-shadow: inset 0 0 10px #beb8b8;
-  background-color: rgb(218, 182, 182);
+  box-shadow: inset 0 0 10px #e7e5e5;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding: 1vh;
   margin: auto;
+  height: 10vh;
+  width: 300vh;
 }
 
 #this-week-app > .button-container {
@@ -70,4 +72,61 @@
   width: 48%;
 
   height: 3vh;
+}
+
+#inflect-it-app > .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  margin-top: 10vh;
+  justify-content: center;
+}
+
+#inflect-it-app > .input-container > input {
+  height: 4vh;
+  font-size: large;
+  margin-bottom: 1vh;
+}
+
+#inflect-it-app > .input-container > button {
+  height: 4vh;
+  font-size: large;
+  margin-bottom: 2vh;
+}
+
+.words-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.word-tile {
+  box-shadow: inset 0 0 10px #beb8b8;
+  border-radius: 10px;
+  padding: 5px;
+  width: 15%;
+  margin: 4vh;
+  list-style-type: none;
+}
+#markdown-app {
+  display: flex;
+  flex-direction: row;
+}
+.editor {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(5, 5, 5, 0.856);
+  color: rgb(21, 184, 43);
+  font-weight: bold;
+  padding: 6px;
+  margin: 1vh;
+  height: 90vh;
+  width: 47%;
+  font-size: 13pt;
+}
+
+.display {
+  border: 2px solid rgb(107, 107, 107);
+  height: 91.5vh;
+  margin: 1vh;
+  width: 47%;
+  padding: 6px;
 }
